@@ -1,0 +1,137 @@
+/* Responsive Styles for Insurance Blog */
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .footer-widgets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .footer-widgets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Devices (Landscape Phones) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .header-top .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-info {
+        margin-bottom: 10px;
+    }
+    
+    .social-links {
+        margin-top: 10px;
+    }
+    
+    .footer-widgets {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .insurance-calculator {
+        padding: 15px;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .article-title {
+        font-size: 20px;
+    }
+    
+    .widget-title {
+        font-size: 18px;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 992px) {
+    .nav-links.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    .nav-links.active ul {
+        flex-direction: column;
+    }
+    
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header-top,
+    .main-nav,
+    .sidebar,
+    .main-footer {
+        display: none;
+    }
+    
+    .main-content {
+        padding: 0;
+    }
+    
+    .article-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .read-more {
+        display: none;
+    }
+} 

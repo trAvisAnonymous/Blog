@@ -1,4 +1,25 @@
-User-Agent: *
-Disallow: /embed/*
+User-agent: *
+Allow: /
 Allow: /sitemap.xml
+Allow: /categories/
+Allow: /articles/
+Allow: /search/
+
+# Disallow admin and system directories
+Disallow: /admin/
+Disallow: /system/
+Disallow: /includes/
+Disallow: /assets/conf.php
+Disallow: /assets/db.php
+
+# Allow access to important assets
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Crawl delay to prevent server overload
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
 
